@@ -1,0 +1,29 @@
+<div class=" mb-3 search">
+    <input type="text"  placeholder="Search for a PC..." class="form-control " #text/>
+    <button (click)="searchPC(text.value)" class="btn btn-success mt-2">Search</button>
+</div>
+<table class="table table-bordered border-success" >    
+    <tr>
+        <th>image</th>
+        <th>name</th>
+        <th>price</th>
+        <th>category</th>
+        <th>availability</th>
+        <th>date</th>
+        <th></th>
+    </tr>
+    @for (p of computers; track $index) {
+        <tr>
+            <td><img [src]="p.photo" alt=""></td>
+            <td>{{p.name}}</td>
+            <td>{{p.price}}</td>
+            <td>{{p.categ}}</td>
+            <td><input type="checkbox" [checked]="p.availability"></td>
+            <td>{{p.date |date}}</td>
+            <td>
+                <button class="btn btn-outline-primary" [routerLink]="['/extranet/fournisseur/flist',p.id]">Modify</button>
+                <button class="btn btn-outline-danger" (click)="deletepc(p.id)">Delete</button>
+            </td>
+        </tr>
+    }
+</table>

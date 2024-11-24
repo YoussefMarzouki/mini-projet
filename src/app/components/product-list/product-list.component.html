@@ -1,0 +1,37 @@
+<body>
+    <div class=" mb-3 search">
+        <input type="text"  placeholder="Search for a PC..." class="form-control " #text/>
+        <button (click)="searchPC(text.value)" class="btn btn-primary mt-2">Search</button>
+    </div>
+    <div class="filters mb-3">
+       <details>
+            <summary>price</summary>
+            <input type="range" id="price-slider" min="1000" max="5000" value="200" step="1"(change)="currentPrice(price.value)" #price>
+            <div id="price-range">
+                <span id="price-min">1000 DT</span> - <span id="price-current"></span> -<span id="price-max">5000 DT</span>
+            </div>
+            <button (click)="filterPrice(price.value)" class="btn btn-sm btn-outline-primary">submit</button>
+       </details>
+       <label></label>
+       <details>
+            <summary>category</summary>
+            <input type="radio" name="categ" id="categ" (input)="filterCateg(0)">Laptop
+            <br>
+            <input type="radio" name="categ" id="categ" (input)="filterCateg(1)">Gaming Laptop
+            <br>
+       </details>
+       <label></label>
+       <details>
+        <summary>Availability</summary>
+        <input type="checkbox" name="" (input)="filterStock(box.checked)" #box> In Stock
+       </details>
+    </div>
+    @for (pc of computers; track pc.id) {
+        <div class="computer">
+            <app-pc [pc]="pc"></app-pc>
+        </div>
+    }
+    <script>
+        
+    </script>
+</body>

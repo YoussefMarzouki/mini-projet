@@ -1,0 +1,12 @@
+<form action="" [formGroup]="pcf">
+    id :<input type="text" formControlName="id"><br>
+    name : <input type="text" formControlName="name"><br>
+    price : <input type="number" formControlName="price"><br>
+    available : <input type="checkbox" formControlName="available"><br>
+    release date : <input type="date" formControlName="date"><br>
+    category : <select formControlName="categ">
+                <option value="">laptop</option>
+                <option value="">Gaming</option>
+            </select><br>
+    <button class="btn btn-outline-success">Modify</button>
+</form>

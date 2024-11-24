@@ -1,0 +1,11 @@
+.activ{
+    font-weight: bolder;
+}
+img{
+    height: 30px;
+    width: 30px;
+}
+.login{
+    position: absolute;
+    margin-left: 80%;
+}

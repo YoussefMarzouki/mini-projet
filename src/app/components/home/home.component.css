@@ -1,0 +1,43 @@
+.ad-container {
+    position: relative;
+    margin-top: 20px; /* Adjust based on navbar height */
+    overflow: hidden;
+    width: 100%; /* Full width */
+    height: 300px; /* Set a height for the ad section */
+    background-color: #f8f9fa; /* Light background color */
+    border: 1px solid #ccc; /* Optional border */
+}
+
+.ad {
+    display: none; /* Hide all ads initially */
+    transition: filter 0.3s ease;
+    position: absolute; /* Position ads absolutely */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+
+.ad.active {
+    display: block; /* Show the active ad */
+}
+
+.ad img {
+    width: 100%; /* Make image full width */
+    height: 100%; /* Make image full height */
+    object-fit: cover; /* Cover the entire div while maintaining aspect ratio */
+}
+
+.learn-more {
+    display: none; /* Hide the button initially */
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to center */
+}
+
+.ad-container:hover .learn-more {
+    display: block; /* Show button on ad container hover */
+}
+
+.ad:hover {
+    filter: blur(5px); /* Blur effect on hover */
+}

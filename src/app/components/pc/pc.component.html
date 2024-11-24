@@ -1,0 +1,6 @@
+<div class="bg-light  col-5 m-3 pc">
+    <img [src]="pc.photo" width="80px" height="80px">
+    <p>{{pc.name}}</p>
+    <p style="color: rgb(35, 183, 40);font-size:large"> {{pc.price}} DT</p>
+    <a class=" btn btn-outline-primary activ" [routerLink]="['/products',pc.id]" >info</a>
+</div>

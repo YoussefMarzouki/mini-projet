@@ -1,0 +1,16 @@
+.pc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5%;
+    height: max-content;
+    width: 250px;
+    border: 3px solid rgb(0, 76, 255);
+    border-radius: 25px;
+}
+.activ{
+    text-decoration: none;
+}
+

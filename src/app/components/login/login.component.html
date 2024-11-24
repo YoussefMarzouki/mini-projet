@@ -1,0 +1,12 @@
+<div class="form-group row g-3 form">
+    <h1>Log In</h1>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="Username" #user>
+        <label for="floatingInput">UserName</label>
+    </div>
+    <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" #pass>
+        <label for="floatingPassword">Password</label>
+    </div>
+    <button class="btn btn-outline-success" (click)="login(user.value,pass.value)">Login</button>
+</div>

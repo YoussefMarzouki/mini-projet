@@ -1,0 +1,26 @@
+
+<div class="col-6 m-5 pc">
+    <img [src]="pc.photo" class="img">
+    <p><strong>Name : </strong>{{pc.name}}</p>
+    <p><strong>Price : </strong> {{pc.price}} DT</p>
+    <p><strong>Categorie : </strong>{{pc.categ}}</p>
+    <p><strong>Release Date : </strong> {{pc.date| date:"dd/MM/yyyy"}}</p>
+    <strong><input type="checkbox" [checked]="pc.availability"> In stock</strong>
+    <br>
+    <br>
+    <div class="comment">
+    <strong style="color: rgb(30,30,197);">Comments</strong>
+    <br>
+        @for (c of pc.comments; track $index) {
+            
+            <div class="comment">
+                <p>{{$index +1}}.</p>
+                <p>{{c.writer}}  </p>
+                <p>Rating :<span style="color: gold;font-size:larger">{{c.rating |star}}</span> {{c.rating}}</p>
+                <p>Description :  {{c.description}}</p>
+            </div>
+        }
+    </div>
+    <a class="btn btn-primary activ" routerLink="/products">Retour</a>
+</div>
+

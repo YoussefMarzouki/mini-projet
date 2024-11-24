@@ -1,0 +1,167 @@
+{
+  "computers": [
+    {
+      "id": "1",
+      "name": "Apple MacBook Pro",
+      "photo": "images/macbook.jpg",
+      "price": 1999.99,
+      "availability": true,
+      "date": "2023-10-01T00:00:00.000Z",
+      "categ": "Laptop",
+      "comments": [
+        {
+          "rating": 5,
+          "description": "Great computer!",
+          "writer": "John Doe"
+        },
+        {
+          "rating": 4,
+          "description": "Good performance, but expensive.",
+          "writer": "Jane Smith"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Dell XPS 13",
+      "photo": "images/dell-xps-13.jpg",
+      "price": 1499.99,
+      "availability": true,
+      "date": "2023-10-02T00:00:00.000Z",
+      "categ": "Laptop",
+      "comments": [
+        {
+          "rating": 4,
+          "description": "Excellent build quality.",
+          "writer": "Alice Johnson"
+        },
+        {
+          "rating": 3,
+          "description": "Battery life could be better.",
+          "writer": "Bob Brown"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "HP Spectre x360",
+      "photo": "images/HPSpectre-x360.jpg",
+      "price": 1399.99,
+      "availability": false,
+      "date": "2023-10-03T00:00:00.000Z",
+      "categ": "Laptop",
+      "comments": [
+        {
+          "rating": 5,
+          "description": "Stylish and powerful!",
+          "writer": "Emily Davis"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Lenovo ThinkPad X1 Carbon",
+      "photo": "images/lenovo-thinkpad-x1.webp",
+      "price": 1799.99,
+      "availability": true,
+      "date": "2023-10-04T00:00:00.000Z",
+      "categ": "Laptop",
+      "comments": [
+        {
+          "rating": 4,
+          "description": "Great keyboard and performance.",
+          "writer": "Michael Wilson"
+        },
+        {
+          "rating": 5,
+          "description": "Best business laptop!",
+          "writer": "Sarah Miller"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Microsoft Surface Laptop 4",
+      "photo": "images/surface-laptop.webp",
+      "price": 1399.99,
+      "availability": false,
+      "date": "2023-10-07T00:00:00.000Z",
+      "categ": "Laptop",
+      "comments": [
+        {
+          "rating": 4,
+          "description": "Excellent display and design.",
+          "writer": "David Lee"
+        },
+        {
+          "rating": 3,
+          "description": "Limited ports.",
+          "writer": "Jessica Taylor"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Asus ROG Zephyrus G14",
+      "photo": "images/pc-portable-asus-rozephyrus-g14.jpg",
+      "price": 1699.99,
+      "availability": true,
+      "date": "2023-10-05T00:00:00.000Z",
+      "categ": "Gaming",
+      "comments": [
+        {
+          "rating": 5,
+          "description": "Incredible gaming performance!",
+          "writer": "Chris Martinez"
+        },
+        {
+          "rating": 4,
+          "description": "Lightweight and portable.",
+          "writer": "Laura Garcia"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Acer Predator Helios 300",
+      "photo": "images/AC_HELIOS.jpg",
+      "price": 1299.99,
+      "availability": true,
+      "date": "2023-10-06T00:00:00.000Z",
+      "categ": "Gaming",
+      "comments": [
+        {
+          "rating": 4,
+          "description": "Good value for the price.",
+          "writer": "Kevin Anderson"
+        },
+        {
+          "rating": 5,
+          "description": "Great cooling system.",
+          "writer": "Michelle Thomas"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Razer Blade 15",
+      "photo": "images/blade.jpg",
+      "price": 2499.99,
+      "availability": true,
+      "date": "2023-10-08T00:00:00.000Z",
+      "categ": "Gaming ",
+      "comments": [
+        {
+          "rating": 5,
+          "description": "Top-notch gaming performance!",
+          "writer": "Daniel Harris"
+        },
+        {
+          "rating": 4,
+          "description": "High-quality display.",
+          "writer": "Olivia Clark"
+        }
+      ]
+    }
+  ]
+}
